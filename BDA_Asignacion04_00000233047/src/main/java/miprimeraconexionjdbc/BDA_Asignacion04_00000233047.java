@@ -16,12 +16,12 @@ import java.sql.Statement;
  */
 public class BDA_Asignacion04_00000233047 {
    
-    private static final String URL = "jdbc:mysql://localhost:3306/MyDatabase";
-    private static final String user = "root";
-    private static final String password = "Sql.introduce.64";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/MyDatabase2";
+    private static final String USER = "root";
+    private static final String PASS = "48273";
    
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, user, password);
+        return DriverManager.getConnection(URL, USER, PASS);
     }
    
     public static void crearTabla() {
