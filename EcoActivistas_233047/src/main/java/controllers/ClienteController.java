@@ -4,12 +4,19 @@
  */
 package controllers;
 
+import daos.IClienteDAO;
+
 /**
  *
  * @author David TL
  */
 public class ClienteController implements IClienteController {
 
+    private final IClienteDAO clienteDAO;
+    public ClienteController(){
+        this.clienteDAO = new ClienteDAO;
+    }
+    
     @Override
     public boolean agregar(String nombre, String direccion, String telefonos) {
         if (nombre == null || nombre.trim().isEmpty()) {
